@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ttanon-viewer"
+version = "0.1.0"
+description = "Python client and CLI for TTAnon, the anonymous TikTok viewer: open TikTok profiles, videos, hashtags and sounds on ttanon.com without an account."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.9"
+authors = [{ name = "social-content-fetcher" }]
+keywords = [
+  "tiktok",
+  "tiktok-viewer",
+  "anonymous-tiktok-viewer",
+  "tiktok-without-account",
+  "tiktok-profile-viewer",
+  "tiktok-downloader",
+  "ttanon",
+]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Topic :: Internet :: WWW/HTTP",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://ttanon.com"
+Source = "https://github.com/social-content-fetcher/ttanon-viewer"
+Documentation = "https://github.com/social-content-fetcher/ttanon-viewer/tree/main/docs"
+
+[project.scripts]
+ttanon-viewer = "ttanon_viewer.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
